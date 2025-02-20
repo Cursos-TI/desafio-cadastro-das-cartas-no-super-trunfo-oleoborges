@@ -17,6 +17,8 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+
+    // Aqui vai ser declarado as variaveis com o tipo correto seja ele char, float, ou int
     char estado1;//="A";
     char codigo1[4];//="A01";
     char nome_da_cidade1[30];//="São Paulo";
@@ -32,8 +34,9 @@ int main() {
     float area2;// = 2522.22 ;
     float pib2;// = 699.28; //bilhões de reais
     int num_pontos_turi2;//= 50;
-
+    // aqui com scanf vamos gravar os dados digitados nas variaveis da primeira carta
     printf("--------------------Cadastro de cartas----------------\n");
+
     printf("insira o estado com uma letra: ");
     scanf("\n%c", &estado1);
     printf("insira o codigo: ");
@@ -49,6 +52,7 @@ int main() {
     printf("insira o numero pontos turisticos: ");
     scanf("\n%d", &num_pontos_turi1);
 
+   // aqui com scanf vamos gravar os dados digitados nas variaveis da segunda carta
     printf("--------------------vamos cadastrar a segunda carta----------------\n");
 
     printf("insira o estado com uma letra: ");
@@ -65,7 +69,8 @@ int main() {
     scanf("\n%f", &pib2);
     printf("insira o numero pontos turisticos: ");
     scanf("\n%d", &num_pontos_turi2);
-
+    
+    //aqui vamos mostrar oa dados cadastrados das cartas com printf
     printf("--------------------você cadastrou essas 2 cartas abaixo----------------\n");
     printf("CARTA 1:\n");
     printf("- letra do estado:%c\n",estado1);
