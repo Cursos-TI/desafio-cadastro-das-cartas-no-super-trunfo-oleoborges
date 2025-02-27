@@ -26,6 +26,9 @@ int main() {
     float area1;               // Ex: 1521.11
     float pib1;                // Ex: 699.28 (bilhões de reais)
     int num_pontos_turi1;      // Ex: 50
+    float pib_per_capita1;
+    float densidade_populacional1;
+
 
     char estado2;              // Ex: 'B'
     char codigo2[4];           // Ex: "A02" (3 caracteres + terminador '\0')
@@ -34,6 +37,8 @@ int main() {
     float area2;              // Ex: 2522.22
     float pib2;               // Ex: 699.28 (bilhões de reais)
     int num_pontos_turi2;     // Ex: 50
+    float pib_per_capita2;
+    float densidade_populacional2;
 
     // Cadastro da primeira carta:
     printf("--------------------Cadastro de cartas----------------\n");
@@ -94,6 +99,12 @@ int main() {
     printf("- Area: %.2f\n", area1);
     printf("- PIB: %.2f\n", pib1);
     printf("- Numero pontos turisticos: %d\n", num_pontos_turi1);
+    pib_per_capita1 = pib1/populacao1; //calculo pib per capita
+    densidade_populacional1 = populacao1/area1;//calcula desidade populacional
+    printf("- Densidade Populacional:%.2f hab/km²\n", densidade_populacional1);
+    printf("- PIB per Capita:R$ %.2f\n", pib_per_capita1);
+
+
 
     printf("CARTA 2:\n");
     printf("- letra do estado: %c\n", estado2);
@@ -103,6 +114,11 @@ int main() {
     printf("- Area: %.2f\n", area2);
     printf("- PIB: %.2f\n", pib2);
     printf("- Numero pontos turisticos: %d\n", num_pontos_turi2);
+    pib_per_capita2 =(float) pib2/populacao2;
+    densidade_populacional2 = (float)populacao2/area2;
+    printf("- Densidade Populacional:%.2f hab/km²\n", densidade_populacional2);
+    printf("- PIB per Capita:R$ %.2f\n", pib_per_capita2);
+   
 
     return 0;
 }
