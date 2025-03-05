@@ -115,15 +115,22 @@ int main() {
     // Exibição da Comparação de Cartas utilizando apenas expressões lógicas:
     // Para população, área, PIB, pontos turísticos, PIB per Capita e Super Poder: maior valor vence.
     // Para densidade populacional: o menor valor vence.
-    printf("-------------------- Comparação de Cartas -> se 1 carta1 ganhou se 0 carta2 ganhou ---------------\n");
+    printf("-------------------- Comparação de Cartas---------------\n");
     
-    printf("População: venceu (%d)\n", (populacao1 > populacao2));
-    printf("Área: venceu (%d)\n", (area1 > area2));
-    printf("PIB: venceu (%d)\n", (pib1 > pib2));
-    printf("Pontos Turísticos: venceu (%d)\n", (num_pontos_turi1 > num_pontos_turi2));
-    printf("Densidade Populacional: venceu (%d)\n", (densidade_populacional1 < densidade_populacional2));
-    printf("PIB per Capita: venceu (%d)\n", (pib_per_capita1 > pib_per_capita2));
-    printf("Super Poder: venceu (%d)\n", (super_poder1 > super_poder2));
+    printf("-População carta1:%d \n",populacao1 );
+    printf("-População carta2:%d \n",populacao2 );
+
+    if (populacao1 > populacao2)
+    {
+        printf("Com base na população a carta 1 ganhou!!");
+       }else{ 
+             if (populacao1 < populacao2)
+             {
+                 printf("Com base na população a carta 2 ganhou!!");
+                 }else{ 
+                    printf("Com base na população as cartas empataram!");
+                }
+    }
     
     return 0;
 }
